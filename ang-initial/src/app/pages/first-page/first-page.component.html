@@ -1,0 +1,22 @@
+<div class="card" style="width: 20rem;">
+  <div class="card-body">
+    <h4 class="card-title">{{ (book | async).title }}</h4>
+    <p class="card-text">This book contains. Or not? {{ (book | async).pages }} pages</p>
+  </div>
+</div>
+
+<div class="input-group">
+  <span class="input-group-btn">
+    <button (click)=updateTitle() class="btn btn-secondary" type="button">Set title</button>
+  </span>
+  <input [(ngModel)]="title" type="text" class="form-control" placeholder="New perfect title" aria-label="New perfect title">
+</div>
+
+<div class="input-group">
+  <span class="input-group-btn">
+    <button (click)=updatePages() class="btn btn-primary" type="button">Set pages or something else?</button>
+  </span>
+  <input [(ngModel)]="pages" type="text" class="form-control" placeholder="How many pages?" aria-label="How many pages?">
+</div>
+
+  <a [routerLink]="['/second-page']" class="btn btn-default">Left</a>

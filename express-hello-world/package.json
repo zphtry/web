@@ -1,0 +1,15 @@
+{
+  "name": "exp",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn build && node dist/src/main.js",
+    "build": "rm -rf dist/* && tsc && tslint -c tslint.json -p tsconfig.json"
+  },
+  "dependencies": {
+    "pg": "^7.4.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^7.4.5"
+  }
+}

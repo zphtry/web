@@ -1,0 +1,6 @@
+{
+  "name": "first-project",
+  "short_name": "first-project",
+  "start_url": "/",
+  "display": "standalone"
+}
