@@ -1,8 +1,8 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/zphtry
-    username: ${psql_username}
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: ${psql_name}
     password: ${psql_pass}
 
   jpa:

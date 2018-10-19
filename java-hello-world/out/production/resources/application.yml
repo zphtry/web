@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: ${psql_name}
+    password: ${psql_pass}
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+    show-sql: false
+    hibernate.ddl-auto: none
+    spring.jpa.hibernate.naming.implicit-strategy:
+      org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+    properties.hibernate.format_sql: true
+    # open-in-view: false
+    # properties:
+    #   hibernate.current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext

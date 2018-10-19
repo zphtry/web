@@ -116,3 +116,7 @@ gradletasknamecache
 # gradle/wrapper/gradle-wrapper.properties
 
 .idea
+*.class
+*.pyc
+*.jar
+application.properties
